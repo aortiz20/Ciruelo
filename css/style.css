@@ -1,6 +1,11 @@
-h1 {
-  font-family: 'Courier New', Courier, monospace;
-  color: red; }
+* {
+  margin: 0;
+  padding: 0; }
+  * html {
+    font-size: 62, 5%; }
+  * .navbar .flex-1 {
+    flex: 1;
+    flex-basis: 100%; }
 
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
