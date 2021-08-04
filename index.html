@@ -5,10 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ciruelo</title>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light main-nav">
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav
+      id="prueba"
+      class="navbar navbar-expand-lg navbar-light sticky-top main-nav"
+    >
       <button
         class="navbar-toggler"
         type="button"
@@ -23,16 +42,17 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <ul class="nav navbar-nav w-100">
           <li>
-            <a class="nav-link" href="#">Sobre mí</a>
+            <a class="nav-link active" href="#sobremi">Sobre mí</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Experiencias</a>
+            <a class="nav-link" href="#experiencias">Experiencias</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Escritos</a>
           </li>
+          <!-- Link wordpress-->
           <li class="nav-item">
-            <a class="nav-link" href="#">Bicho de luz</a>
+            <a class="nav-link" href="pages/bichodeluz.html">Bicho de luz</a>
           </li>
         </ul>
         <ul class="nav navbar-nav justify-content-center">
@@ -46,8 +66,8 @@
       </div>
     </nav>
 
-    <div data-spy="scroll" data-target="#navbar-spy" data-offset="0">
-      <h2 id="sobremi">Sobre Mí</h2>
+    <div id="sobremi" class="container-fluid pruebascroll">
+      <h2>Sobre Mí</h2>
 
       <p>
         Mi nombre es Juan Nicolas Osses Mariño (aunque este último apellido no
@@ -59,7 +79,9 @@
 
       <h5>En venado tuerto aprendí lo aprendido en el seno familiar</h5>
 
-      <h6>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</h6>
+      <h6 class="text-center">
+        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+      </h6>
 
       <p>
         Al finalizar mis estudios secundarios me mudé a Río Ceballos dentro de
@@ -91,9 +113,12 @@
         es el mundo en sus diversas formas y representaciones.
       </p>
 
-      <h6>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</h6>
-
-      <h2 id="experiencias">La música como escencia</h2>
+      <h6 class="text-center">
+        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+      </h6>
+    </div>
+    <div id="experiencias" class="container-fluid body">
+      <h2>La música como escencia</h2>
       <p>
         Estudié algunos años instrumentos como Saxofón, Guitarra y Piano y me he
         formado como Terapeuta Sonoro llevando la Música a reuniones de
@@ -155,20 +180,16 @@
       </p>
     </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Footer -->
+    <footer class="page-footer font-small">
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        ©ciruelo All Rigths Reserved: <br />
+        Illustration(s) from
+        <a href="https://absurd.design/">absurd.desing</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
   </body>
 </html>
