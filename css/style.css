@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: "POST";
-  src: local(".../fonts/POST.OTF"); }
+  src: local("../fonts/POST.OTF"); }
 
 nav {
   background-color: white;
