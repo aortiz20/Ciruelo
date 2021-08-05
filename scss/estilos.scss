@@ -31,8 +31,12 @@ nav {
   margin: 8rem 3rem 8rem 3rem;
 }
 
-.probarscroll {
-  margin: 0px 0px 20rem 0px;
+.xxx {
+    margin: 8rem 0rem 8rem 0rem;
+}
+
+.texto {
+    margin: 2rem 1rem 2rem 1rem,;
 }
 
 
@@ -52,6 +56,18 @@ nav {
     font-size: 1rem;
 }
 
+//img
+.img1{
+    transform: rotate(1deg);
+}
+
+.img-1 {
+    transform: rotate(-1deg);
+}
+
+.cassete {
+    transform: rotate(-4deg);
+}
 .footer {
     font-family: $general;
     font-size: 0.8rem;
