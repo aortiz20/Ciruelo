@@ -27,17 +27,31 @@ nav {
 .texto {
   margin: 2rem 1rem 2rem 1rem; }
 
+#venado {
+  margin: 12rem 8rem 6rem 8rem; }
+
+.formulario {
+  margin: 5rem 7rem 8rem 7rem; }
+
 .titulos {
   font-family: "POST";
-  font-size: 2rem; }
+  font-size: 2rem;
+  transform: rotate(-1deg); }
 
 .subtitulos {
   font-family: "POST";
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  transform: rotate(); }
 
 .general {
   font-family: Karla;
   font-size: 1rem; }
+
+.destacados {
+  font-family: "POST";
+  font-size: 2rem;
+  transform: rotate(-1deg);
+  margin: 4rem 0rem 4rem 0rem; }
 
 .img1 {
   transform: rotate(1deg); }

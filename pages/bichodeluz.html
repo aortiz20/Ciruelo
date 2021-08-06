@@ -23,51 +23,48 @@
     <title>Bicho de Luz</title>
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <nav
-      id="prueba"
-      class="navbar navbar-expand-lg navbar-light sticky-top main-nav"
-    >
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarTogglerDemo01"
-        aria-controls="navbarTogglerDemo01"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <ul class="nav navbar-nav w-100">
-          <li>
-            <a class="nav-link active" href="../index.html">Sobre mí</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html">Experiencias</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Escritos</a>
-          </li>
-          <!-- Link wordpress-->
-          <li class="nav-item">
-            <a class="nav-link" href="#bichodeluz">Bicho de luz</a>
-          </li>
-        </ul>
-        <ul class="nav navbar-nav justify-content-center">
-          <li class="nav-item">
-            <li class="nav-item"><a class="nav-link" href="../index.html"> <img src="../imagenes/LOGOTIPO.png" width="150px"  alt="">
-          </li>
-        </ul>
-        <ul class="nav navbar-nav w-100 justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link" href="contacto.html">Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <nav id="prueba" class="navbar navbar-expand-lg navbar-light sticky-top">
 
-    <h2 id="bichodeluz" class="text-center">Bicho de Luz</h2>
+      <!--  Show this only on mobile to medium screens  -->
+      
+        <a class="navbar-brand d-lg-none" href="index.html"><img src="../imagenes/LOGOTIPO.png" width="200px" alt="Ciruelo"></a>
+      
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+      <!--  Use flexbox utility classes to change how the child elements are justified  -->
+        <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
+          <ul class="navbar-nav">
+              <li>
+                <a class="nav-link active" href="../index.html">Sobre mí</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Experiencias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Escritos</a>
+              </li>
+              <!-- Link wordpress-->
+            </ul>
+
+          
+      <!--   Show this only lg screens and up   -->
+          <div class="justify-content-center">
+          <a class="navbar-brand d-none d-lg-block" href="#"><img src="../imagenes/LOGOTIPO.png" width="150px" alt=""></a>
+          </div>  
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link" href="#bichodeluz">Bicho de luz</a>
+                </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+          </ul>
+        </div>
+      </nav>
+
+    <h2 id="bichodeluz" class="text-center titulos">Bicho de Luz</h2>
 
     <!-- Footer -->
     <footer class="page-footer font-small">

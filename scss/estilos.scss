@@ -39,16 +39,25 @@ nav {
     margin: 2rem 1rem 2rem 1rem,;
 }
 
+#venado {
+    margin: 12rem 8rem 6rem 8rem;
+}
+
+.formulario {
+    margin: 5rem 7rem 8rem 7rem;
+}
 
 //tipografia
 .titulos {
     font-family: $titulos;
     font-size: 2rem;
+    transform: rotate(-1deg);
 }
 
 .subtitulos {
     font-family: $titulos;
     font-size: 1.5rem;
+    transform: rotate();
 }
 
 .general {
@@ -56,6 +65,14 @@ nav {
     font-size: 1rem;
 }
 
+//texto
+
+.destacados {
+    font-family: $titulos;
+    font-size: 2rem;
+    transform: rotate(-1deg);
+    margin: 4rem 0rem 4rem 0rem;
+}
 //img
 .img1{
     transform: rotate(1deg);
