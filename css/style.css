@@ -12,15 +12,23 @@
   font-family: "POST";
   src: url("../fonts/POST.OTF"); }
 
-html, body {
-  overflow-x: hidden;
-  color: black;
-  font-family: 'Opens Sans',helvetica;
-  height: 100%;
-  width: 101%;
-  margin: 0px;
-  padding: 0px; }
+.abs-center-x {
+  position: absolute;
+  left: 45%;
+  transform: translateX(-50%);
+  transform: translateY(-40%); }
 
+/*
+html,body{
+    overflow-x: hidden;
+    color:black;
+    font-family:'Opens Sans',helvetica;  
+    height:100%;
+    width:101%;
+    margin: 0px;
+    padding: 0px;
+  }
+  */
 nav {
   background-color: white;
   height: auto;
@@ -92,6 +100,18 @@ nav {
   border: 4px solid transparent;
   transition: all 300ms ease;
   transform: scale(0); }
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    height: 100vh;
+    font-size: 2rem;
+    padding: 2rem; }
+  .collapse {
+    font-size: 2rem;
+    padding: 2rem; } }
+
+.navbar-toggler, .navbar-toggler {
+  border: none !important; }
 
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
