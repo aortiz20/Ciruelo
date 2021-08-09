@@ -16,19 +16,17 @@
   position: absolute;
   left: 45%;
   transform: translateX(-50%);
-  transform: translateY(-40%); }
+  transform: translateY(-52%); }
 
-/*
-html,body{
-    overflow-x: hidden;
-    color:black;
-    font-family:'Opens Sans',helvetica;  
-    height:100%;
-    width:101%;
-    margin: 0px;
-    padding: 0px;
-  }
-  */
+html, body {
+  overflow-x: hidden;
+  color: black;
+  font-family: 'Opens Sans',helvetica;
+  height: 100%;
+  width: 101%;
+  margin: 0px;
+  padding: 0px; }
+
 nav {
   background-color: white;
   height: auto;
@@ -58,7 +56,7 @@ nav {
 .subtitulos {
   font-family: "POST";
   font-size: 1.5rem;
-  transform: rotate(); }
+  transform: rotate(-1deg); }
 
 .general {
   font-family: Karla;
