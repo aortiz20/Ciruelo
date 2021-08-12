@@ -27,6 +27,9 @@
     margin: 0px;
     padding: 0px;
   }*/
+body {
+  overflow-x: hidden; }
+
 nav {
   background-color: white;
   height: auto;
