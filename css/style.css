@@ -4,19 +4,10 @@
   padding: 0; }
   * html {
     font-size: 62, 5%; }
-  * .navbar .flex-1 {
-    flex: 1;
-    flex-basis: 100%; }
 
 @font-face {
   font-family: "POST";
   src: url("../fonts/POST.OTF"); }
-
-.abs-center-x {
-  position: absolute;
-  left: 45%;
-  transform: translateX(-50%);
-  transform: translateY(-52%); }
 
 /*html,body{
     overflow-x: hidden;
@@ -141,6 +132,12 @@ html {
 ::-webkit-scrollbar-track-piece {
   /* not handle on */
   background: white; }
+
+.color {
+  background-color: rgba(0, 0, 0, 0.377); }
+
+#subir {
+  transform: translateY(-15%); }
 
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
