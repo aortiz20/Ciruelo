@@ -22,96 +22,57 @@
     <link rel="stylesheet" href="../css/style.css" />
     <title>Contacto</title>
   </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <nav id="prueba" class="navbar navbar-expand-lg navbar-light sticky-top">
+  <body data-spy="scroll" data-target="#navbar-example" data-offset="50">
+    <nav id="navbar-example" class="navbar navbar-expand-lg navbar-dark color sticky-top">
+      <a class="navbar-brand" href="../index.html"><img src="../imagenes/LOGOTIPO.png" width="150px" alt="Ciruelo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html#sobremi">Sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html#experiencias">Experiencias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html#escritos">Escritos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html#bichodeluz">Bicho deluz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-      <!--  Show this only on mobile to medium screens  -->
-      
-        <a class="navbar-brand d-lg-none" href="index.html"><img src="../imagenes/LOGOTIPO.png" width="200px" alt="Ciruelo"></a>
-      
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-      <!--  Use flexbox utility classes to change how the child elements are justified  -->
-        <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
-          <ul class="navbar-nav">
-              <li>
-                <a class="nav-link active" href="../index.html">Sobre mí</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../index.html">Experiencias</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Escritos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="http://bichodeluz.com.ar/" target="_blank">Bicho de luz</a>
-              </li>
-              <!-- Link wordpress-->
-            </ul>
-
-          
-      <!--   Show this only lg screens and up   -->
-        <div>
-        <a class="navbar-brand d-none d-lg-block abs-center-x" href="#"><img src="../imagenes/LOGOTIPO.png" width="150px" alt=""></a>
-        </div> 
-          <ul class="navbar-nav">
-             
-              <li class="nav-item">
-                  <a class="nav-link" href="#contacto">Contacto</a>
-                </li>
-          </ul>
-        </div>
-      </nav>
-
-    <div id="contacto" class="body">
+    <div id="contacto">
       <h2 class="text-center titulos">Contacto</h2>
       <p class="text-center texto general">
-        Si querés comunicarte conmigo podés enviarme un mail a XXX@gmail.com o
-        contactarme via redes sociales
+        Si querés comunicarte conmigo podés llenar el formulario, enviarme un mail a XXX@gmail.com o  contactarme vía redes sociales. Gracias!
       </p>
 
-      <div class=" container-fluid  text-center">
-        <a href="linkafacebook"><img src="../imagenes/face.png" alt="Facebook" width="50" /></a>
+      <div class="container-fluid  text-center">
         <a href="linkaig"> <img src="../imagenes/ig.png" alt="Instagram" width="50" /></a>
-        <a href="mailto:xxx@gmail.com"><img src="../imagenes/gmail.png" alt="Gmail" width="50"></a>
       </div>
 
-      <div class=" container-fluid formulario">
-        <form class="margenesServicios" action="#">
-          <input
-            type="text"
-            class="form-control"
-            name="Nombre"
-            placeholder="Nombre"
-          /><br />
-          <input
-            type="text"
-            class="form-control"
-            name="Apellido"
-            placeholder="Apellido"
-          /><br />
-          <input
-            type="email"
-            class="form-control"
-            name="Correo"
-            placeholder="Email"
-          /><br />
-          <textarea
-            class="form-control"
-            name="Comentarios"
-            rows="8"
-            cols="40"
-          ></textarea
-          ><br />
-          <button type="submit" class="btn btn-info" value="Enviar">
-            Enviar
-          </button>
-          <button type="reset" class="btn btn-info" value="Limpiar">
-            Limpiar
-          </button>
-        </form>
+
+      <div id="formulario">
+      <form method="post" action="index.php">
+        <label for="nombre">Nombre y apellido</label>
+        <input id="nombre" name="nombre" placeholder="Nombre completo">
+        <label for="email">Correo electrónico</label>
+        <input id="email" name="email" type="email" placeholder="ejemplo@email.com">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Danos tu mensaje"></textarea>
+        <button id="submit" name="submit"  class="btn btn-primary" type="submit" value="Enviar">
+          ENVIAR
+        </button>
+      </form>
       </div>
 
       <div class="xxx">

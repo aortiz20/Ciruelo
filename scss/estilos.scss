@@ -63,19 +63,23 @@ margin: 8rem 5rem 8rem 3rem;
 //tipografia
 .titulos {
     font-family: $titulos;
-    font-size: 2rem;
+    font-size: 2.5rem;
     transform: rotate(-1deg);
+    margin: 2rem 1rem 2rem 1rem
+
 }
 
 .subtitulos {
     font-family: $titulos;
     font-size: 1.5rem;
     transform: rotate(-1deg);
+    margin: 2rem 1rem 2rem 1rem
 }
 
 .general {
     font-family: $general;
     font-size: 1rem;
+    margin: 2rem 1rem 2rem 1rem
 }
 
 //texto
@@ -182,7 +186,66 @@ html {
 }
 
 #subir {
-    transform: translateY(-15%);
+    transform: translateY(-17%);
 }
+
+//botones
+.btn-centro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #000000 !important;
+}
+
+//formulario
+#formulario {
+    width: 50%; 
+    margin: 0% 0% 0% 12%; 
+   } 
+label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:1px;
+}
+ 
+.principal {
+    display:block;
+    margin:0 auto;
+    width:510px;
+    color: #666666;
+    font-family:Arial;
+}
+ 
+form {
+    margin:0 auto;
+    width:400px;
+}
+ 
+input, textarea {
+    width:50rem;
+    height:27px;
+    background: white;
+    border:2px solid #f6f6f6;
+    padding:10px;
+    margin-top:5px;
+    font-size:10px;
+    color:#ffffff;
+}
+ 
+textarea {
+    height:150px;
+}
+ 
+#submit {
+    width:85px;
+    height:35px;
+    border:none;
+    margin-top:20px;
+    cursor:pointer;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 @import "../bootstrap/scss/bootstrap.scss";
