@@ -79,7 +79,8 @@ margin: 8rem 5rem 8rem 3rem;
 .general {
     font-family: $general;
     font-size: 1rem;
-    margin: 2rem 1rem 2rem 1rem
+    margin: 2rem 1rem 2rem 1rem;
+    line-height: 2rem;
 }
 
 //texto
@@ -101,6 +102,11 @@ margin: 8rem 5rem 8rem 3rem;
 
 .cassete {
     transform: rotate(-4deg);
+}
+
+#arriba {
+    transform: translateY(-17%);
+
 }
 .footer {
     font-family: $general;
@@ -246,6 +252,22 @@ textarea {
     margin-top:20px;
     cursor:pointer;
 }
+
+.boton button{
+    background-color: rgba(128, 128, 128, 0.267);
+    padding: 1rem;
+    border: solid black 1px;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+  }
+  .boton button:hover{
+    background-color: rgba(0, 0, 0, 0.418);
+    transition: 0.5s;
+  }
+
+  .boton a{
+    text-decoration: none;
+  }
 
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 @import "../bootstrap/scss/bootstrap.scss";

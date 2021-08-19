@@ -57,7 +57,8 @@ nav {
 .general {
   font-family: Karla;
   font-size: 1rem;
-  margin: 2rem 1rem 2rem 1rem; }
+  margin: 2rem 1rem 2rem 1rem;
+  line-height: 2rem; }
 
 .destacados {
   font-family: "POST";
@@ -73,6 +74,9 @@ nav {
 
 .cassete {
   transform: rotate(-4deg); }
+
+#arriba {
+  transform: translateY(-17%); }
 
 .footer {
   font-family: Karla;
@@ -189,6 +193,20 @@ textarea {
   border: none;
   margin-top: 20px;
   cursor: pointer; }
+
+.boton button {
+  background-color: rgba(128, 128, 128, 0.267);
+  padding: 1rem;
+  border: solid black 1px;
+  border-radius: 5px;
+  margin-bottom: 2rem; }
+
+.boton button:hover {
+  background-color: rgba(0, 0, 0, 0.418);
+  transition: 0.5s; }
+
+.boton a {
+  text-decoration: none; }
 
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
