@@ -9,23 +9,8 @@
   font-family: "POST";
   src: url("../fonts/POST.OTF"); }
 
-/*html,body{
-    overflow-x: hidden;
-    color:black;
-    font-family:'Opens Sans',helvetica;  
-    height:100%;
-    width:101%;
-    margin: 0px;
-    padding: 0px;
-  }*/
 body {
   overflow-x: hidden; }
-
-nav {
-  background-color: white;
-  height: auto;
-  margin: 0rem 0rem 3rem 0px;
-  font-family: Karla; }
 
 .body {
   margin: 8rem 5rem 8rem 3rem; }
@@ -41,6 +26,14 @@ nav {
 
 .formulario {
   margin: 5rem 7rem 8rem 7rem; }
+
+nav {
+  height: auto;
+  margin: 0rem 0rem 3rem 0px;
+  font-family: Karla; }
+
+.color {
+  background-color: rgba(0, 0, 0, 0.377); }
 
 .titulos {
   font-family: "POST";
@@ -76,7 +69,7 @@ nav {
   transform: rotate(-4deg); }
 
 #arriba {
-  transform: translateY(-17%); }
+  transform: translateY(-15%); }
 
 .footer {
   font-family: Karla;
@@ -104,10 +97,15 @@ nav {
   .navbar-collapse {
     height: 100vh;
     font-size: 2rem;
-    padding: 2rem; }
+    padding: 2rem;
+    text-align: center; }
   .collapse {
     font-size: 2rem;
-    padding: 2rem; } }
+    padding: 2rem; }
+  .color {
+    display: none; }
+  #subir {
+    display: none; } }
 
 .navbar-toggler, .navbar-toggler {
   border: none !important; }
@@ -139,9 +137,6 @@ html {
 ::-webkit-scrollbar-track-piece {
   /* not handle on */
   background: white; }
-
-.color {
-  background-color: rgba(0, 0, 0, 0.377); }
 
 #subir {
   transform: translateY(-17%); }
