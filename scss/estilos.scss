@@ -42,9 +42,7 @@ margin: 8rem 5rem 8rem 3rem;
     margin: 12rem 8rem 6rem 8rem;
 }
 
-.formulario {
-    margin: 5rem 7rem 8rem 7rem;
-}
+
 
 //nav
 
@@ -52,6 +50,7 @@ nav {
   height: auto;
   margin: 0rem 0rem 3rem 0px;
   font-family: $general;
+  background-color: white;
 }
 
 .color {
@@ -99,6 +98,19 @@ nav {
     transform: rotate(-1deg);
 }
 
+.top-image{
+    filter:alpha(opacity=75); opacity:.75;
+    margin-top: -8rem;
+    margin-bottom: -4rem;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: 40% center;
+    background-size: cover;
+    background-image: url(../imagenes/sobremi1.png);
+}
+
 .cassete {
     transform: rotate(-4deg);
 }
@@ -142,6 +154,7 @@ nav {
     font-size: 2rem;
     padding: 2rem;
     text-align: center;
+
 }
 .collapse {
     font-size: 2rem;
@@ -209,6 +222,10 @@ html {
     flex-direction: row;
     justify-content: center; 
 }
+.btn-centro a{
+    text-decoration: none;
+    color: white;
+}
 
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
     background-color: #000000 !important;
@@ -220,6 +237,7 @@ html {
     margin: 0% 0% 0% 12%; 
    } 
 label {
+    width: 80%;
     display:block;
     margin-top:20px;
     letter-spacing:1px;
@@ -237,20 +255,30 @@ form {
     margin:0 auto;
     width:400px;
 }
+
+.izquierda{
+    text-align: left;
+}
  
 input, textarea {
-    width:50rem;
+    width: 80%;
     height:27px;
     background: white;
     border:2px solid #f6f6f6;
     padding:10px;
     margin-top:5px;
     font-size:10px;
-    color:#ffffff;
+    color:black;
 }
  
 textarea {
     height:150px;
+    width: 100%;
+}
+
+.tamanio{
+    width: 450px;
+    height: auto;
 }
  
 #submit {
@@ -259,6 +287,13 @@ textarea {
     border:none;
     margin-top:20px;
     cursor:pointer;
+}
+.mostrar{
+    display: none;
+}
+
+.nomostrar{
+    display: flex;
 }
 
 .boton button{
@@ -275,7 +310,94 @@ textarea {
 
   .boton a{
     text-decoration: none;
+    color: black;
   }
+  .centrado{
+      text-align: center
+  }
+  .centrado{
+      display: flex;
+      justify-content: center;
+  }
+  .bloque{
+    display: block;
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 @import "../bootstrap/scss/bootstrap.scss";
+
+@media (max-width: 990px) {
+    .margen2{
+        margin-bottom: 4rem;
+    }
+}
+
+@media (max-width: 500px) {
+    #venado {
+        margin: 5rem 1rem 6rem 0rem;
+        width: 100%;
+    }
+    #arriba {
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 370px) {
+    .nomostrar{
+        display: none;
+    }
+    .mostrar{
+        display: block;
+    }
+    .subtitulos {
+        text-align: center;
+        font-size: 1rem;
+    }
+    .centrado{
+        text-align:justify;
+    }
+    .texto {
+        margin: 0rem 1rem 2rem 1rem,;
+    }
+    .destacados {
+        font-size: 1.2rem;
+        margin: 1.5rem 0rem 1.5rem 0rem;
+    }
+    .titulos {
+        font-size: 1.65rem;
+        margin: 2rem 1rem 2rem 1rem
+    
+    }
+    .xxx {
+        margin: 2rem 0rem 2rem 0rem;
+    }
+    #margen{
+        margin-bottom: 2rem;
+    }
+    #arriba {
+        margin-top: 4rem;
+    }
+    .tamanio{
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        height: auto;
+    }
+    .footer {
+        font-size: 1rem;
+    }
+    .margen-negativo{
+        margin-bottom: -7rem;
+    }
+    input, textarea {
+        width: 80%;
+    }
+    #formulario {
+        width: 50%; 
+        margin: 0% 0% 0% 0%; 
+       } 
+    form {
+        margin:0 auto;
+        width:360px;
+    }
+}
