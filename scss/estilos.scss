@@ -388,12 +388,20 @@ textarea {
     .margen-negativo{
         margin-bottom: -7rem;
     }
+    label {
+        margin-left: 1rem;
+    }
     input, textarea {
         width: 80%;
+        margin-left: 1rem;
+    }
+    #submit {
+        margin-left: 1rem;
     }
     #formulario {
-        width: 50%; 
+        width: 100%; 
         margin: 0% 0% 0% 0%; 
+        overflow: hidden;
        } 
     form {
         margin:0 auto;

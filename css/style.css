@@ -7476,11 +7476,17 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: 1rem; }
   .margen-negativo {
     margin-bottom: -7rem; }
+  label {
+    margin-left: 1rem; }
   input, textarea {
-    width: 80%; }
+    width: 80%;
+    margin-left: 1rem; }
+  #submit {
+    margin-left: 1rem; }
   #formulario {
-    width: 50%;
-    margin: 0% 0% 0% 0%; }
+    width: 100%;
+    margin: 0% 0% 0% 0%;
+    overflow: hidden; }
   form {
     margin: 0 auto;
     width: 360px; } }
